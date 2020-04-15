@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/HE77XTL/dodoUI/issues"
   },
-  "homepage": "https://github.com/HE77XTL/dodoUI#readme"
+  "homepage": "https://github.com/HE77XTL/dodoUI#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
 }
