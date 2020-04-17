@@ -1,4 +1,5 @@
-const path = require('path')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     mode: 'production',
     entry: {
@@ -9,6 +10,10 @@ module.exports = {
         library: "DoDoUI",
         libraryTarget: 'umd'
     },
+    plugins: [new HtmlWebpackPlugin({
+        title: "DoDoUI",
+        template: "index.html"
+    })],
     module: {
         rules: [
             {
@@ -16,5 +21,5 @@ module.exports = {
                 loader: 'awesome-typescript-loader'
             }
         ]
-    }
+    },
 }
