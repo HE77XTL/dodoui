@@ -1,9 +1,10 @@
 import * as React from 'react'
 import * as ReactDom from 'react-dom'
 
-import Button from './button'
+//import Button from './button'
+import Icon from './icon/icon'
 
 ReactDom.render(
-    <Button />,
+    <Icon name="wechat" />,
     document.getElementById('root')
 )
