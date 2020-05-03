@@ -5,6 +5,9 @@ import * as ReactDom from 'react-dom'
 import Icon from './icon/icon'
 
 ReactDom.render(
-    <Icon name="wechat" />,
+    <div>
+        <Icon name="wechat" />,
+        <Icon name="qq" />,
+    </div>,
     document.getElementById('root')
 )

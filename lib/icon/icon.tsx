@@ -1,8 +1,9 @@
 import * as React from "react";
-//import "./importAllIcons"
+import "./importAllIcons"
+import "./icon.scss"
 
-import "../../icons/wechat.svg";
-
+// 静态引入可以 tree-shaking
+//import "../../icons/wechat.svg";
 //import '../../icons/qq.svg'
 
 interface iconProps {
@@ -12,8 +13,8 @@ interface iconProps {
 const Icon: React.FunctionComponent<iconProps> = (props) => {
     return (
         <span>
-            <svg>
-                <use xlinkHref='#wechat'/>
+            <svg className='dodo-icon '>
+                <use xlinkHref={`#${props.name}`}/>
             </svg>
         </span>
     );
